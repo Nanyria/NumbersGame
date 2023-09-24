@@ -11,6 +11,7 @@ namespace NumbersGame
             Random randomMed = new Random();
             int winningNumMed = randomMed.Next(1, 21);
             int medGuesses = 0;
+      
             Console.WriteLine("Välkommen! Jag tänker på ett nummer. Kan du gissa vilket? Du får fem försök.");
             while (medGuesses != 5)
             {
@@ -25,19 +26,25 @@ namespace NumbersGame
                 {
                     Console.WriteLine("Tyvärr, du gissade för högt!");
                     Console.WriteLine("Gissa igen!");
+                    medGuesses++;
                 }
                 else if (nr != winningNumMed && nr < winningNumMed)
                 {
                     Console.WriteLine("Tyvärr, du gissade för lågt!");
                     Console.WriteLine("Gissa igen!");
+                    medGuesses++;
                 }
 
+            }
+            if (medGuesses >= 5) 
+            {
+                Console.WriteLine("Du har använt alla dina gissningar, du förlorade!");
             }
         }
 
 
         //    bool choices = true;
-            
+
         //    Console.WriteLine("Hej! Välkommen till gissa numret, välj din svårighetsgrad:");
         //    Console.WriteLine("[1] Enkel svårighetsgrad: Fem gissningar, nummer mellan 1-10.");
         //    Console.WriteLine("[2] Medel svårighetsgrad: Tre gissningar, nummer mellan 1-20.");
@@ -81,9 +88,10 @@ namespace NumbersGame
         //    Random randomEasy = new Random();
         //    int winningNumEasy = randomEasy.Next(1, 11);
         //    int easyGuesses = 0;
+        //    Console.WriteLine("Välkommen! Jag tänker på ett nummer. Kan du gissa vilket? Du får fem försök.");
         //    while (easyGuesses != 5)
         //    {
-        //        Console.WriteLine("Välkommen! Jag tänker på ett nummer. Kan du gissa vilket? Du får fem försök.");
+        //        
         //        Console.WriteLine("Skriv det nummer du vill gissa på:");
         //        int nr = Convert.ToInt32(Console.ReadLine());
         //        if (nr == winningNumEasy)
@@ -106,9 +114,9 @@ namespace NumbersGame
         //    Random randomMed = new Random();
         //    int winningNumMed = randomMed.Next(1, 11);
         //    int medGuesses = 0;
+        //    Console.WriteLine("Välkommen! Jag tänker på ett nummer. Kan du gissa vilket? Du får fem försök.");
         //    while (medGuesses != 5)
         //    {
-        //        Console.WriteLine("Välkommen! Jag tänker på ett nummer. Kan du gissa vilket? Du får fem försök.");
         //        Console.WriteLine("Skriv det nummer du vill gissa på:");
         //        int nr = Convert.ToInt32(Console.ReadLine());
         //        if (nr == winningNumMed)
@@ -134,9 +142,9 @@ namespace NumbersGame
         //    Random randomHard = new Random();
         //    int winningNumHard = randomHard.Next(1, 11);
         //    int hardGuesses = 0;
+        //    Console.WriteLine("Välkommen! Jag tänker på ett nummer. Kan du gissa vilket? Du får fem försök.");
         //    while (hardGuesses != 5)
         //    {
-        //        Console.WriteLine("Välkommen! Jag tänker på ett nummer. Kan du gissa vilket? Du får fem försök.");
         //        Console.WriteLine("Skriv det nummer du vill gissa på:");
         //        int nr = Convert.ToInt32(Console.ReadLine());
         //        if (nr == winningNumHard)
