@@ -7,7 +7,7 @@ namespace NumbersGame
     {
         static void Main(string[] args)
         {
-
+            Program.Meny();
 
         }
         public static void Meny()
@@ -24,12 +24,15 @@ namespace NumbersGame
                 {
                     case 1:
                         Program.Easy();
+                        Console.WriteLine("Tack för att du spelade!");
                         break;
                     case 2:
                         Program.Medium();
+                        Console.WriteLine("Tack för att du spelade!");
                         break;
                     case 3:
                         Program.Hard();
+                        Console.WriteLine("Tack för att du spelade!");
                         break;
                     case 4:
                         Console.WriteLine("Tack för att du spelade!");
@@ -137,7 +140,7 @@ namespace NumbersGame
                 }
 
             }
-            if (hardGuesses >= 5)
+            if (hardGuesses >= 1)
             {
                 Console.WriteLine("Du har använt alla dina gissningar, du förlorade!");
             }
