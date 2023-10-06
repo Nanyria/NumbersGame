@@ -41,39 +41,42 @@ namespace NumbersGame
                 Console.WriteLine("Du har använt alla dina gissningar, du förlorade!");
             }
         }
+        public static void Meny()
+        {
+            Console.WriteLine("Hej! Välkommen till gissa numret, välj din svårighetsgrad:");
+            Console.WriteLine("[1] Enkel svårighetsgrad: Fem gissningar, nummer mellan 1-10.");
+            Console.WriteLine("[2] Medel svårighetsgrad: Tre gissningar, nummer mellan 1-20.");
+            Console.WriteLine("[3] Svår svårighetsgrad: En gissning, nummer mellan 1-30.");
+            Console.WriteLine("[4] Avsluta programmet.");
+            int choice = Convert.ToInt32(Console.ReadLine());
+            if ((choice => 1 && choice < 5))
+            {
+                switch (choice)
+                {
+                    case 1:
+                        break;
+                    case 2:
+                        break;
+                    case 3:
+                        break;
+                    case 4:
+                        break;
+
+                }
+            }
+            else
+            {
+                Console.WriteLine("Du måste välja ett nummer mellan 1-4´.");
+            }
 
 
-        //    bool choices = true;
+        } 
 
-        //    Console.WriteLine("Hej! Välkommen till gissa numret, välj din svårighetsgrad:");
-        //    Console.WriteLine("[1] Enkel svårighetsgrad: Fem gissningar, nummer mellan 1-10.");
-        //    Console.WriteLine("[2] Medel svårighetsgrad: Tre gissningar, nummer mellan 1-20.");
-        //    Console.WriteLine("[3] Svår svårighetsgrad: En gissning, nummer mellan 1-30.");
-        //    Console.WriteLine("[4] Avsluta programmet.");
-        //    while (choices)
-        //    {
-        //        int choice = Convert.ToInt32(Console.ReadLine());
-        //        if (choice == 1)
-        //        {
 
-        //        }
-        //        else if (choice == 2)
-        //        {
 
-        //        }
-        //        else if (choice == 3)
-        //        {
 
-        //        }
-        //        else if (choice == 4)
-        //        {
 
-        //        }
-        //        else
-        //        {
-        //            Console.WriteLine("Du måste välja ett nummer mellan 1-4´.");
-        //        }
-        //    }
+}
 
 
 
