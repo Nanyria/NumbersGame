@@ -8,38 +8,7 @@ namespace NumbersGame
         static void Main(string[] args)
         {
 
-            Random randomMed = new Random();
-            int winningNumMed = randomMed.Next(1, 21);
-            int medGuesses = 0;
-      
-            Console.WriteLine("Välkommen! Jag tänker på ett nummer. Kan du gissa vilket? Du får fem försök.");
-            while (medGuesses != 5)
-            {
-                Console.WriteLine("Skriv det nummer du vill gissa på:");
-                int nr = Convert.ToInt32(Console.ReadLine());
-                if (nr == winningNumMed)
-                {
-                    Console.WriteLine("Woho, du gjorde det! Rätt nummer var {0}!", winningNumMed);
-                    break;
-                }
-                else if (nr != winningNumMed && nr > winningNumMed)
-                {
-                    Console.WriteLine("Tyvärr, du gissade för högt!");
-                    Console.WriteLine("Gissa igen!");
-                    medGuesses++;
-                }
-                else if (nr != winningNumMed && nr < winningNumMed)
-                {
-                    Console.WriteLine("Tyvärr, du gissade för lågt!");
-                    Console.WriteLine("Gissa igen!");
-                    medGuesses++;
-                }
 
-            }
-            if (medGuesses >= 5) 
-            {
-                Console.WriteLine("Du har använt alla dina gissningar, du förlorade!");
-            }
         }
         public static void Meny()
         {
@@ -103,6 +72,10 @@ namespace NumbersGame
                     easyGuesses++;
                 }
             }
+            if (easyGuesses >= 5)
+            {
+                Console.WriteLine("Du har använt alla dina gissningar, du förlorade!");
+            }
         }
         public static void Medium()
         {
@@ -122,12 +95,18 @@ namespace NumbersGame
                 else if (nr != winningNumMed && nr > winningNumMed)
                 {
                     Console.WriteLine("Tyvärr, du gissade för högt!");
+                    medGuesses++;
                 }
                 else if (nr != winningNumMed && nr < winningNumMed)
                 {
                     Console.WriteLine("Tyvärr, du gissade för lågt!");
+                    medGuesses++;
                 }
 
+            }
+            if (medGuesses >= 5)
+            {
+                Console.WriteLine("Du har använt alla dina gissningar, du förlorade!");
             }
 
         }
@@ -155,6 +134,10 @@ namespace NumbersGame
                     Console.WriteLine("Tyvärr, du gissade för lågt!");
                 }
 
+            }
+            if (hardGuesses >= 5)
+            {
+                Console.WriteLine("Du har använt alla dina gissningar, du förlorade!");
             }
 
         }
