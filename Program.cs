@@ -128,10 +128,12 @@ namespace NumbersGame
                 else if (nr != winningNumHard && nr > winningNumHard)
                 {
                     Console.WriteLine("Tyvärr, du gissade för högt!");
+                    hardGuesses++;
                 }
                 else if (nr != winningNumHard && nr < winningNumHard)
                 {
                     Console.WriteLine("Tyvärr, du gissade för lågt!");
+                    hardGuesses++;
                 }
 
             }
