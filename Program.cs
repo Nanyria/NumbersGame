@@ -67,9 +67,11 @@ namespace NumbersGame
                     switch (playAgain)
                     {
                         case 1:
+                            Console.Clear();
                             Program.Meny();
                             break;
                         case 2:
+                            Environment.Exit(0);
                             break;
                     }
                 }
@@ -92,9 +94,11 @@ namespace NumbersGame
                 switch (playAgain)
                 {
                     case 1:
+                        Console.Clear();
                         Program.Meny();
                         break;
                     case 2:
+                        Environment.Exit(0);
                         break;
                 }
             }
@@ -117,9 +121,11 @@ namespace NumbersGame
                     switch (playAgain)
                     {
                         case 1:
+                            Console.Clear();
                             Program.Meny();
                             break;
                         case 2:
+                            Environment.Exit(0);
                             break;
                     }
                 }
@@ -143,9 +149,11 @@ namespace NumbersGame
                 switch (playAgain)
                 {
                     case 1:
+                        Console.Clear();
                         Program.Meny();
                         break;
                     case 2:
+                        Environment.Exit(0);
                         break;
                 }
             }
@@ -169,9 +177,11 @@ namespace NumbersGame
                     switch (playAgain)
                     {
                         case 1:
+                            Console.Clear();
                             Program.Meny();
                             break;
                         case 2:
+                            Environment.Exit(0);
                             break;
                     }
                 }
@@ -195,9 +205,11 @@ namespace NumbersGame
                 switch (playAgain)
                 {
                     case 1:
+                        Console.Clear();
                         Program.Meny();
                         break;
                     case 2:
+                        Environment.Exit(0);
                         break;
                 }
             }
