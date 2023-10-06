@@ -62,7 +62,16 @@ namespace NumbersGame
                 if (nr == winningNumEasy)
                 {
                     Console.WriteLine("Woho, du gjorde det! Rätt nummer var {0}!", winningNumEasy);
-                    break;
+                    Console.WriteLine("Vill du spela igen? Tryck [1], för att avsluta, tryck [2].");
+                    int playAgain = Convert.ToInt32(Console.ReadLine());
+                    switch (playAgain)
+                    {
+                        case 1:
+                            Program.Meny();
+                            break;
+                        case 2:
+                            break;
+                    }
                 }
                 else if (nr != winningNumEasy && nr > winningNumEasy)
                 {
@@ -78,6 +87,16 @@ namespace NumbersGame
             if (easyGuesses >= 5)
             {
                 Console.WriteLine("Du har använt alla dina gissningar, du förlorade!");
+                Console.WriteLine("Vill du spela igen? Tryck [1], för att avsluta, tryck [2].");
+                int playAgain = Convert.ToInt32(Console.ReadLine());
+                switch (playAgain)
+                {
+                    case 1:
+                        Program.Meny();
+                        break;
+                    case 2:
+                        break;
+                }
             }
         }
         public static void Medium()
@@ -93,7 +112,16 @@ namespace NumbersGame
                 if (nr == winningNumMed)
                 {
                     Console.WriteLine("Woho, du gjorde det! Rätt nummer var {0}!", winningNumMed);
-                    break;
+                    Console.WriteLine("Vill du spela igen? Tryck [1], för att avsluta, tryck [2].");
+                    int playAgain = Convert.ToInt32(Console.ReadLine());
+                    switch (playAgain)
+                    {
+                        case 1:
+                            Program.Meny();
+                            break;
+                        case 2:
+                            break;
+                    }
                 }
                 else if (nr != winningNumMed && nr > winningNumMed)
                 {
@@ -110,6 +138,16 @@ namespace NumbersGame
             if (medGuesses >= 5)
             {
                 Console.WriteLine("Du har använt alla dina gissningar, du förlorade!");
+                Console.WriteLine("Vill du spela igen? Tryck [1], för att avsluta, tryck [2].");
+                int playAgain = Convert.ToInt32(Console.ReadLine());
+                switch (playAgain)
+                {
+                    case 1:
+                        Program.Meny();
+                        break;
+                    case 2:
+                        break;
+                }
             }
 
         }
@@ -126,7 +164,16 @@ namespace NumbersGame
                 if (nr == winningNumHard)
                 {
                     Console.WriteLine("Woho, du gjorde det! Rätt nummer var {0}!", winningNumHard);
-                    break;
+                    Console.WriteLine("Vill du spela igen? Tryck [1], för att avsluta, tryck [2].");
+                    int playAgain = Convert.ToInt32(Console.ReadLine());
+                    switch (playAgain)
+                    {
+                        case 1:
+                            Program.Meny();
+                            break;
+                        case 2:
+                            break;
+                    }
                 }
                 else if (nr != winningNumHard && nr > winningNumHard)
                 {
@@ -143,7 +190,18 @@ namespace NumbersGame
             if (hardGuesses >= 1)
             {
                 Console.WriteLine("Du har använt alla dina gissningar, du förlorade!");
+                Console.WriteLine("Vill du spela igen? Tryck [1], för att avsluta, tryck [2].");
+                int playAgain = Convert.ToInt32(Console.ReadLine());
+                switch (playAgain)
+                {
+                    case 1:
+                        Program.Meny();
+                        break;
+                    case 2:
+                        break;
+                }
             }
+            
 
         }
 
