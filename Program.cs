@@ -17,10 +17,11 @@ namespace NumbersGame
             Console.WriteLine("[2] Medel svårighetsgrad: Tre gissningar, nummer mellan 1-20.");
             Console.WriteLine("[3] Svår svårighetsgrad: En gissning, nummer mellan 1-30.");
             Console.WriteLine("[4] Avsluta programmet.");
-            int choice = Convert.ToInt32(Console.ReadLine());
-            if ((choice >= 1 && choice < 5))
+            string choice = Console.ReadLine();
+            int result = 0;
+            if (Int32.TryParse(choice, out result) || (result >= 1 && result < 5))
             {
-                switch (choice)
+                switch (result)
                 {
                     case 1:
                         Program.Easy();
@@ -43,7 +44,7 @@ namespace NumbersGame
             }
             else
             {
-                Console.WriteLine("Du måste välja ett nummer mellan 1-4´.");
+                Console.WriteLine("Du måste välja ett nummer mellan 1-4.");
             }
 
 
