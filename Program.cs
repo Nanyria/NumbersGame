@@ -119,7 +119,7 @@ namespace NumbersGame
             int winningNumHard = randomHard.Next(1, 11);
             int hardGuesses = 0;
             Console.WriteLine("Välkommen! Jag tänker på ett nummer. Kan du gissa vilket? Du får fem försök.");
-            while (hardGuesses != 5)
+            while (hardGuesses != 1)
             {
                 Console.WriteLine("Skriv det nummer du vill gissa på:");
                 int nr = Convert.ToInt32(Console.ReadLine());
